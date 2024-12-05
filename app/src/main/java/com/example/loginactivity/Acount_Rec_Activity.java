@@ -200,7 +200,7 @@ public class Acount_Rec_Activity extends AppCompatActivity {
                                     // Now check the verification code
                                     if (verificationCode.equals(code)) {
                                         // Redirect to ResetPass_Activity
-                                        Intent resetPass = new Intent(Acount_Rec_Activity.this, ResetActivity.class);
+                                        Intent resetPass = new Intent(Acount_Rec_Activity.this, ResetPass_Activity.class);
                                         resetPass.putExtra("contact_value", contact_value);
                                         startActivity(resetPass);
                                     }

@@ -49,7 +49,7 @@ public class ResetPass_Activity extends AppCompatActivity {
         acc_rec_submit_code = findViewById(R.id.acc_rec_submit_code);
 
         Intent resetPass = getIntent();
-        contact_value = resetPass.getStringExtra(contact_value).trim();
+        contact_value = resetPass.getStringExtra("contact_value").trim();
 
         // Add TextWatcher for password fields
         acc_rec_ed_new_pass.addTextChangedListener(new TextWatcher() {
@@ -142,9 +142,9 @@ public class ResetPass_Activity extends AppCompatActivity {
                         if (response.equals("success")) {
                             Toast.makeText(getApplicationContext(), "Password reset successful", Toast.LENGTH_SHORT).show();
                             // Navigate to the login screen or another activity
-                            Intent intent = new Intent(ResetPass_Activity.this, MainActivity.class);
-                            startActivity(intent);
-                            finish();
+                            //Intent intent = new Intent(ResetActivity.this, MainActivity.class);
+                            //startActivity(intent);
+                            //finish();
                         }
                         else if (response.equals("error")) {
                             Toast.makeText(getApplicationContext(), "Failed to reset password. Please try again.", Toast.LENGTH_SHORT).show();

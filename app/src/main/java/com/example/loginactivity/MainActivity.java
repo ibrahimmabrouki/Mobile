@@ -73,10 +73,10 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Switch to the login layout
 
-                //Intent i_MainActivity1 = new Intent(getApplicationContext(), MainActivity1.class);
-                //startActivity(i_MainActivity1);
-                setContentView(R.layout.activity_main_login);
-                login();
+                Intent i_MainActivity1 = new Intent(getApplicationContext(), Add_Meals_Activity.class);
+                startActivity(i_MainActivity1);
+                //setContentView(R.layout.activity_main_login);
+                //login();
             }
         });
 
